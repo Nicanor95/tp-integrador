@@ -4,6 +4,7 @@
 
 body {
 	max-width: 800px;
+	min-width: 250px;
 	margin: auto;
 	padding: 1rem;
 }
@@ -38,4 +39,14 @@ body {
 	width: 200px;
 	height: 300px;
 	border: 1px solid grey;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width:230px;
+	padding: 1rem;
+	border: 1px solid black;
+	justify-self:center;
+	row-gap: 0.5rem;
 }
