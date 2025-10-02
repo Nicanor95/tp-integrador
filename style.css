@@ -93,3 +93,7 @@ form input[type="submit"]:active {
 	box-shadow: 1px 1px;
 	transform: translate(2px, 2px);
 }
+
+.sinopsis{
+	font-size: 13px;
+}
