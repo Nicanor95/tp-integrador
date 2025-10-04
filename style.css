@@ -44,7 +44,9 @@ body {
 }
 
 .cartelera div {
-	width: 200px;
+	display:flex;
+	flex-direction: column;
+	width: 225px;
 	padding: 1rem;
 	border: 1px solid black;
 	border-radius: 10px;
@@ -53,11 +55,18 @@ body {
 }
 
 .cartelera div img {
-	min-height: 300px; /* Para bosquejar */
-	min-width: 200px; /* Para bosquejar */
-	width: 200px;
-	height: 300px;
-	border: 1px solid grey;
+	display: block;
+	min-height: 325px; /* Para bosquejar */
+	min-width: 225px; /* Para bosquejar */
+	width: 225px;
+	height: 325px;
+	border: 2px solid white;
+	box-shadow: 0 0 5px 2px black;
+	align-self: center;
+}
+
+.cartelera div h2 {
+	text-align: center;
 }
 
 form {
