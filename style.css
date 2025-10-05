@@ -15,6 +15,14 @@ body {
 	color: white;
 }
 
+a {
+	color: var(--accent)
+}
+
+a:visited {
+	color: hsl(167, 99%, 30%);
+}
+
 .main h1 {
 	display:block;
 	text-align: center;
