@@ -98,7 +98,7 @@ form input, form select {
 	border-bottom: 1px solid var(--accent);
 }
 
-form input[type="submit"] {
+input[type="submit"] {
 	background: var(--accent);
 	color:black;
 	border-bottom: none;
@@ -106,7 +106,7 @@ form input[type="submit"] {
 	box-shadow: 3px 3px;
 }
 
-form input[type="submit"]:active {
+input[type="submit"]:active {
 	box-shadow: 1px 1px;
 	transform: translate(2px, 2px);
 }
