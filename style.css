@@ -114,3 +114,34 @@ input[type="submit"]:active {
 .sinopsis{
 	font-size: 13px;
 }
+
+footer {
+	border-top: 1px solid var(--accent);
+	font-size: 10px;
+	display:flex;
+	flex-direction: row;
+	column-gap: 2rem;
+	justify-content: center;
+	margin-top: 10rem;
+}
+
+footer form {
+	width: auto;
+	row-gap: 1px;
+}
+
+footer form input {
+	height: 1.5em;
+}
+
+footer form input[type="submit"] {
+	margin-top: 0.5em;
+}
+
+.redes a {
+	text-decoration: none;
+}
+
+.redes div {
+	display: grid;
+}
