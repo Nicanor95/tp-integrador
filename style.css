@@ -26,6 +26,8 @@ a:visited {
 .main h1 {
 	display:block;
 	text-align: center;
+	font-size: 2em;
+	
 }
 
 .nav {
@@ -144,4 +146,27 @@ footer form input[type="submit"] {
 
 .redes div {
 	display: grid;
+}
+
+.contenedor_tarjetas {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.tarjeta-trailer {
+	display:flex;
+	column-gap: 1rem;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: var(--bg-mid);
+	box-shadow: 0 0 10px black;
+	max-height: 315px; /* Basado en el height del embed de YouTube */
+}
+
+.tarjeta-trailer h3 {
+	font-size: 1.2em;
+}
+
+.tarjeta-trailer p {
+	font-size: 0.9em;
 }
