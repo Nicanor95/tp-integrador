@@ -147,6 +147,7 @@ footer form input[type="submit"] {
 }
 
 .contenedor_tarjetas {
+	position:relative;
 	max-width: 1000px;
 	margin: auto;
 }
@@ -167,4 +168,22 @@ footer form input[type="submit"] {
 
 .tarjeta-trailer p {
 	font-size: 0.9em;
+}
+
+.ant, .sig {
+	position: absolute;
+	cursor: pointer;
+	top: 40%;
+	padding: 1rem;
+	font-size: 2rem;
+	border-radius: 0 5px 5px 0;
+	transition: 0.5s ease;
+}
+.sig {
+	right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+.ant:hover, .sig:hover {
+	background-color: rgba(0, 0, 0, 0.75);
 }
