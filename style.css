@@ -153,7 +153,7 @@ footer form input[type="submit"] {
 }
 
 .tarjeta-trailer {
-	display: none;
+	display: flex;
 	column-gap: 1rem;
 	border: 1px solid black;
 	border-radius: 10px;
