@@ -16,7 +16,7 @@
 	</section>
 	<section class="main">
 		<h1>Sacá tu entrada!</h1>
-		<form>
+		<form name="entrada">
 
 			<label for="pelicula">Película:</label>
 			<select id="pelicula" name="pelicula">
@@ -26,21 +26,26 @@
 				<option>Película 3</option>
 				<option>Película 4</option>
 			</select>
+			<span class="error">Seleccione una pelicula</span>
 
 			<label for="funcion">Función:</label>
 			<select id="funcion" name="funcion">
+				<option selected disabled>Seleccione</option>
 				<option>16:00</option>
 				<option>18:30</option>
 				<option>21:00</option>
 			</select>
+			<span class="error">Seleccione el horario a asistir</span>
 
 			<label for="nombre">Nombre:</label>
 			<input type="text" name="nombre" id="nombre">
+			<span class="error">Mínimo 3 caracteres. Sin numeros o caracteres especiales</span>
 
 			<label for="correo">Email:</label>
 			<input type="email" name="correo" id="correo">
+			<span class="error">Email invalido</span>
 
-			<input type="submit" value="Comprar">
+			<input type="submit" value="Comprar" onclick="validate(event)">
 		</form>
 	</section>
 
@@ -73,6 +78,8 @@
 			</form>
 		</div>
 	</footer>
+
+	<script src="../form.js"></script>
 </body>
 
 </html>

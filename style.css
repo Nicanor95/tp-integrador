@@ -187,3 +187,27 @@ footer form input[type="submit"] {
 .ant:hover, .sig:hover {
 	background-color: rgba(0, 0, 0, 0.75);
 }
+
+.formout {
+	margin: 4rem auto;
+	max-width: 600px;
+	min-width: 300px;
+}
+
+.formout p {
+	background-color: var(--bg-mid);
+	border-radius: 5px;
+	padding: 0rem 1rem 1rem 1rem;
+	border: 1px solid black;
+	box-shadow: 0 0 10px black;
+}
+
+.error {
+	color: red;
+	font-size: 0.8rem;
+	display: none;
+}
+
+.error::before {
+	content: "* ";
+}
