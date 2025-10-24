@@ -76,6 +76,12 @@ a:visited {
 	text-align: center;
 }
 
+.cartelera div button {
+	border: none;
+	margin-top: auto;
+	height: 1.5rem;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -98,15 +104,16 @@ form select {
 	border-bottom: 1px solid var(--accent);
 }
 
-input[type="submit"] {
+input[type="submit"], button {
 	background: var(--accent);
 	color: black;
 	border-bottom: none;
 	margin-top: 1.5rem;
 	box-shadow: 3px 3px;
+	font-weight: bold;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, button:active {
 	box-shadow: 1px 1px;
 	transform: translate(2px, 2px);
 }
