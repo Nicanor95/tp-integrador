@@ -21,6 +21,13 @@ const funcion = document.getElementById("funcion");
 const nombre = document.getElementById("nombre");
 const correo = document.getElementById("correo");
 
+// Tomamos los parametros desde la url
+let query = window.location.search;
+let parametros = new URLSearchParams(query);
+
+// Seleccionamos la pelicula
+pelicula.selectedIndex = parametros.get('pelicula');
+
 const regNombre = /^[a-zA-Zñ]{3,}(?: [a-zA-Z]+)*$/;
 const regMail = /^[a-zA-Z0-9](?:[\.-\w])*@\w+(?:-\w+)?(?:\.\w+(?:-\w+)?)+$/;
 
