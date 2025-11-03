@@ -6,87 +6,90 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="../styles/style.css">
 	<title>Saca tu entrada</title>
 </head>
 
 <body>
-	<section class="nav">
-		<a href="../index.html">Inicio</a>
-		<a href="../article/cartelera.html">Cartelera</a>
-		<a href="./sacaentrada.html">Entradas</a>
-	</section>
-	<section class="main">
-		<h1>Sacá tu entrada!</h1>
-		<form name="entrada">
+	<div class="gradient">
+		<section class="nav">
+			<a href="../index.html">Inicio</a>
+			<a href="../article/cartelera.html">Cartelera</a>
+			<a href="./sacaentrada.html">Entradas</a>
+		</section>
+		<section class="main">
+			<h1>Sacá tu entrada!</h1>
+			<form name="entrada">
 
-			<label for="pelicula">Película:</label>
-			<select id="pelicula" name="pelicula">
-				<option selected disabled>Seleccione</option>
-				<option>Oppenheimer</option>
-				<option>Whiplash</option>
-				<option>Fight Club</option>
-				<option>The Naked Gun</option>
-				<option>Tiburón</option>
-				<option>The Karate Kid</option>
-			</select>
-			<span class="error">Seleccione una pelicula</span>
+				<label for="pelicula">Película:</label>
+				<select id="pelicula" name="pelicula">
+					<option selected disabled>Seleccione</option>
+					<option>Oppenheimer</option>
+					<option>Whiplash</option>
+					<option>Fight Club</option>
+					<option>The Naked Gun</option>
+					<option>Tiburón</option>
+					<option>The Karate Kid</option>
+				</select>
+				<span class="error">Seleccione una pelicula</span>
 
-			<label for="funcion">Función:</label>
-			<select id="funcion" name="funcion">
-				<option selected disabled>Seleccione</option>
-				<option>16:00</option>
-				<option>18:30</option>
-				<option>21:00</option>
-			</select>
-			<span class="error">Seleccione el horario a asistir</span>
+				<label for="funcion">Función:</label>
+				<select id="funcion" name="funcion">
+					<option selected disabled>Seleccione</option>
+					<option>16:00</option>
+					<option>18:30</option>
+					<option>21:00</option>
+				</select>
+				<span class="error">Seleccione el horario a asistir</span>
 
-			<label for="nombre">Nombre:</label>
-			<input type="text" name="nombre" id="nombre">
-			<span class="error">Mínimo 3 caracteres. Sin numeros o caracteres especiales</span>
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre">
+				<span class="error">Mínimo 3 caracteres. Sin numeros o caracteres especiales</span>
 
-			<label for="correo">Email:</label>
-			<input type="email" name="correo" id="correo">
-			<span class="error">Email invalido</span>
+				<label for="correo">Email:</label>
+				<input type="email" name="correo" id="correo">
+				<span class="error">Email invalido</span>
 
-			<input type="submit" value="Comprar" onclick="validate(event)">
-		</form>
-	</section>
-
-	<footer>
-		<div>
-			<h4>Ayuda y Contacto</h4>
-			<p><strong>Telefono:</strong> +54 2664346292</p>
-			<p><strong>Email:</strong> info@cineejemplo.com</p>
-			<p><strong>Dirección:</strong> Calle los cisnes, San Luis, Argentina</p>
-			<a href="">Preguntas Frecuentes</a>
-			<a href="">Trabaja con Nosotros</a>
-		</div>
-
-		<div class="redes">
-			<h4>Síguenos</h4>
-			<div class="iconos-redes">
-				<a href="#" target="_blank" aria-label="Facebook">🍿 Facebook</a>
-				<a href="#" target="_blank" aria-label="Instagram">🎬 Instagram</a>
-				<a href="#" target="_blank" aria-label="Twitter">🎥 Twitter</a>
-			</div>
-			<p>Tu lugar favorito para las mejores historias.</p>
-		</div>
-
-		<div>
-			<h4>No te pierdas nada</h4>
-			<p>Suscribite y recibi las ultimas noticias sobre cine</p>
-			<form action="/subscribe" method="POST">
-				<input type="email" placeholder="Tu correo electrónico" required>
-				<input type="submit" value="Suscribirme">
+				<input type="submit" value="Comprar" onclick="validate(event)">
 			</form>
-		</div>
-	</footer>
+		</section>
 
+		<footer>
+			<div>
+				<h4>Ayuda y Contacto</h4>
+				<p><strong>Telefono:</strong> +54 2664346292</p>
+				<p><strong>Email:</strong> info@cineejemplo.com</p>
+				<p><strong>Dirección:</strong> Calle los cisnes, San Luis, Argentina</p>
+				<a href="">Preguntas Frecuentes</a>
+				<a href="">Trabaja con Nosotros</a>
+			</div>
+
+			<div class="redes">
+				<h4>Síguenos</h4>
+				<div class="iconos-redes">
+					<a href="#" target="_blank" aria-label="Facebook">🍿 Facebook</a>
+					<a href="#" target="_blank" aria-label="Instagram">🎬 Instagram</a>
+					<a href="#" target="_blank" aria-label="Twitter">🎥 Twitter</a>
+				</div>
+				<p>Tu lugar favorito para las mejores historias.</p>
+			</div>
+
+			<div>
+				<h4>No te pierdas nada</h4>
+				<p>Suscribite y recibi las ultimas noticias sobre cine</p>
+				<form action="/subscribe" method="POST">
+					<input type="email" placeholder="Tu correo electrónico" required>
+					<input type="submit" value="Suscribirme">
+				</form>
+			</div>
+		</footer>
+	</div>
 	<script src="../js/form.js"></script>
 </body>
 
