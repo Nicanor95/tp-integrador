@@ -5,6 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Trabajo Practico Integrador</title>
 </head>
 
@@ -13,43 +19,42 @@
 	<nav class="nav">
 		<a href="./index.html">Inicio</a>
 		<a href="./article/cartelera.html">Cartelera</a>
-		<a href="./form/sacaentrada.html">Sacá tu Entrada</a>
+		<a href="./form/sacaentrada.html">Entradas</a>
 	</nav>
 	<section class="main">
+		<div class="pantalla_principal">
 
-		<h1>Bienvenido a CinemaChenter</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus debitis voluptate labore recusandae,
-			voluptas sequi atque tenetur maxime corrupti cupiditate ducimus quaerat facilis hic quam quis modi! Beatae,
-			voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quo facilis iste natus omnis
-			similique quisquam animi eligendi molestiae ducimus dignissimos, atque eius vitae, corporis qui. Temporibus
-			blanditiis laboriosam hic! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at ducimus,
-			numquam officiis hic enim sint possimus praesentium tempore veniam cumque mollitia id explicabo esse
-			reiciendis nihil illo distinctio harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-			aliquid fugit eius. Illo reiciendis dolorum tempore magni fuga assumenda ducimus quaerat quibusdam minus
-			debitis. Voluptatem soluta vitae architecto aspernatur expedita.</p>
+		<h1 class="header_bienvenida">Bienvenido a CinemaChenter</h1>
+		<p class="p_bienvenida">La plataforma numero uno de <strong>peliculas en español</strong> 
+		<br>
+		<br>                  
+		Donde cada película se vive como una experiencia única.
+		<br> Disfrutá de <strong>la mejor cartelera, la comodidad de nuestras salas y la magia del cine en su máxima expresión.</strong>
+		<br>
+		<br>
+		¡Preparate para dejarte llevar por la gran pantalla!</p>
+		<a href="./form/sacaentrada.html" class="button_bienvenida">Quiero mi entrada!</a>
+		</div>
 		<!----------------------------SECCION COMBOS---------------------------->
 		<h1>Combos</h1>
 		<section class="cartelera">
 			<div>
 				<img src="imagenes/combos/individual.png" alt="Portada">
 				<h2>Combo individual</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, aliquid. Provident sunt pariatur
-					repellat facilis doloremque distinctio fugit, dolor, ex architecto animi eveniet, quisquam
-					perferendis unde. Aut voluptatem consequuntur excepturi.</p>
+				<p>Ideal para disfrutar tu película a gusto. Incluye pochoclos chicos, un vaso de gaseosa y un delicioso chocolate Nestlé. ¡Tu clásico favorito de siempre!</p>
+				<button class="button_pochoclos">Comprar</button>
 			</div>
 			<div>
 				<img src="imagenes/combos/nachos.png" alt="Portada">
 				<h2>Combo nachos</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, aliquid. Provident sunt pariatur
-					repellat facilis doloremque distinctio fugit, dolor, ex architecto animi eveniet, quisquam
-					perferendis unde. Aut voluptatem consequuntur excepturi.</p>
+				<p>Para los amantes del sabor salado. Disfrutá unos crocantes nachos con queso, una gaseosa refrescante y un pequeño pote extra de queso. ¡Perfecto para compartir!</p>
+				<button class="button_pochoclos">Comprar</button>
 			</div>
 			<div>
 				<img src="imagenes//combos/premium.png" alt="Portada">
 				<h2>Combo premium</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, aliquid. Provident sunt pariatur
-					repellat facilis doloremque distinctio fugit, dolor, ex architecto animi eveniet, quisquam
-					perferendis unde. Aut voluptatem consequuntur excepturi.</p>
+				<p>Lo mejor de ambos mundos: pochoclos, nachos con queso, gaseosa y chocolate Nestlé. Todo en un solo combo para una experiencia completa de cine.</p>
+				<button class="button_pochoclos">Comprar</button>
 			</div>
 		</section>
 
@@ -77,33 +82,33 @@
 		</section>
 	</section>
 	<footer>
-		<div>
-			<h4>Ayuda y Contacto</h4>
-			<p><strong>Telefono:</strong> +54 2664346292</p>
-			<p><strong>Email:</strong> info@cineejemplo.com</p>
-			<p><strong>Dirección:</strong> Calle los cisnes, San Luis, Argentina</p>
-			<a href="">Preguntas Frecuentes</a>
-			<a href="">Trabaja con Nosotros</a>
-		</div>
+		<div class="footer-col contacto">
+        <h4>Ayuda y Contacto</h4>
+        <p><strong>Teléfono:</strong> +54 2664346292</p>
+        <p><strong>Email:</strong> info@cineejemplo.com</p>
+        <p><strong>Dirección:</strong> Calle los cisnes, San Luis, Argentina</p>
+        <a href="#" class="footer-link">Preguntas Frecuentes</a>
+        <a href="#" class="footer-link">Trabaja con Nosotros</a>
+    	</div>
 
-		<div class="redes">
-			<h4>Síguenos</h4>
-			<div class="iconos-redes">
-				<a href="#" target="_blank" aria-label="Facebook">🍿 Facebook</a>
-				<a href="#" target="_blank" aria-label="Instagram">🎬 Instagram</a>
-				<a href="#" target="_blank" aria-label="Twitter">🎥 Twitter</a>
-			</div>
-			<p>Tu lugar favorito para las mejores historias.</p>
-		</div>
+    <div class="footer-col redes-sociales">
+        <h4>Síguenos</h4>
+        <div class="iconos-redes">
+            <a href="#" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+        <p class="tagline">Tu lugar favorito para las mejores historias.</p>
+    </div>
 
-		<div>
-			<h4>No te pierdas nada</h4>
-			<p>Suscribite y recibi las ultimas noticias sobre cine</p>
-			<form action="/subscribe" method="POST">
-				<input type="email" placeholder="Tu correo electrónico" required>
-				<input type="submit" value="Suscribirme">
-			</form>
-		</div>
+    <div class="footer-col newsletter">
+        <h4>No te pierdas nada</h4>
+        <p>Suscríbete y recibe las últimas noticias sobre cine</p>
+        <form action="/subscribe" method="POST" class="footer-form">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <input type="submit" value="Suscribirme">
+        </form>
+    </div>
 	</footer>
 
 	<script src="./js/carrousel.js"></script>
