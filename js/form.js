@@ -43,11 +43,12 @@ function validate(event) {
 	nombre.style.borderBottomColor = "";
 	correo.style.borderBottomColor = "";
 	telefono.style.borderBottomColor = "";
-	document.querySelector("#pelicula+.error").style.display = "none";
-	document.querySelector("#funcion+.error").style.display = "none";
-	document.querySelector("#nombre+.error").style.display = "none";
-	document.querySelector("#correo+.error").style.display = "none";
-	document.querySelector("#telefono+.error").style.display = "none";
+
+	let errores = document.getElementsByClassName("error");
+
+	for (let error of errores) {
+		error.style.display = "none";
+	}
 
 	if (!pelicula.selectedIndex) {
 		valido = false;
