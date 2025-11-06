@@ -20,6 +20,7 @@ const pelicula = document.getElementById("pelicula");
 const funcion = document.getElementById("funcion");
 const nombre = document.getElementById("nombre");
 const correo = document.getElementById("correo");
+const telefono = document.getElementById("telefono");
 
 // Tomamos los parametros desde la url
 let query = window.location.search;
@@ -30,53 +31,63 @@ pelicula.selectedIndex = parametros.get('pelicula');
 
 const regNombre = /^[a-zA-Zñ]{3,}(?: [a-zA-Z]+)*$/;
 const regMail = /^[a-zA-Z0-9](?:[\.-\w])*@\w+(?:-\w+)?(?:\.\w+(?:-\w+)?)+$/;
+const regTelefono = /^\+?\d{7,15}$/;
 
 function validate(event) {
-	event.preventDefault();
-	let valido = true;
+    event.preventDefault();
+    let valido = true;
 
-	// Reseteamos colores
-	pelicula.style.borderBottomColor = "";
-	funcion.style.borderBottomColor = "";
-	nombre.style.borderBottomColor = "";
-	correo.style.borderBottomColor = "";
-	document.querySelector("#pelicula+.error").style.display = "none";
-	document.querySelector("#funcion+.error").style.display = "none";
-	document.querySelector("#nombre+.error").style.display = "none";
-	document.querySelector("#correo+.error").style.display = "none";
-	
-	if (!pelicula.selectedIndex) {
-		valido = false;
-		pelicula.style.borderBottomColor = "red";
-		document.querySelector("#pelicula+.error").style.display = "block";
-	}
+    // Reseteamos colores
+    pelicula.style.borderBottomColor = "";
+    funcion.style.borderBottomColor = "";
+    nombre.style.borderBottomColor = "";
+    correo.style.borderBottomColor = "";
+    telefono.style.borderBottomColor = "";
+    document.querySelector("#pelicula+.error").style.display = "none";
+    document.querySelector("#funcion+.error").style.display = "none";
+    document.querySelector("#nombre+.error").style.display = "none";
+    document.querySelector("#correo+.error").style.display = "none";
+    document.querySelector("#telefono+.error").style.display = "none";
+    
+    if (!pelicula.selectedIndex) {
+        valido = false;
+        pelicula.style.borderBottomColor = "red";
+        document.querySelector("#pelicula+.error").style.display = "block";
+    }
 
-	if (!funcion.selectedIndex) {
-		valido = false;
-		funcion.style.borderBottomColor = "red";
-		document.querySelector("#funcion+.error").style.display = "block";
-	}
+    if (!funcion.selectedIndex) {
+        valido = false;
+        funcion.style.borderBottomColor = "red";
+        document.querySelector("#funcion+.error").style.display = "block";
+    }
 
-	if (!(regNombre.test(nombre.value))) {
-		valido = false;
-		nombre.style.borderBottomColor = "red";
-		document.querySelector("#nombre+.error").style.display = "block";
-	}
+    if (!(regNombre.test(nombre.value))) {
+        valido = false;
+        nombre.style.borderBottomColor = "red";
+        document.querySelector("#nombre+.error").style.display = "block";
+    }
 
-	if (!(regMail.test(correo.value))) {
-		valido = false;
-		correo.style.borderBottomColor = "red";
-		document.querySelector("#correo+.error").style.display = "block";
-	}
+    if (!(regMail.test(correo.value))) {
+        valido = false;
+        correo.style.borderBottomColor = "red";
+        document.querySelector("#correo+.error").style.display = "block";
+    }
 
-	if (valido) {
-		outputText.innerText = `
-		Película: ${pelicula.options[pelicula.selectedIndex].innerText}
-		Función: ${funcion.options[funcion.selectedIndex].innerText}
-		Nombre: ${nombre.value}
-		Correo: ${correo.value}
-		`;
-		outputDiv.style.display = "block";
-		document.forms['entrada'].reset();
-	}
-} 
+    if (!(regTelefono.test(telefono.value))) {
+        valido = false;
+        telefono.style.borderBottomColor = "red";
+        document.querySelector("#telefono+.error").style.display = "block";
+    }
+
+    if (valido) {
+        outputText.innerText = `
+        Película: ${pelicula.options[pelicula.selectedIndex].innerText}
+        Función: ${funcion.options[funcion.selectedIndex].innerText}
+        Nombre: ${nombre.value}
+        Correo: ${correo.value}
+        Teléfono: ${telefono.value}
+        `;
+        outputDiv.style.display = "block";
+        document.forms['entrada'].reset();
+    }
+}
