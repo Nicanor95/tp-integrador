@@ -6,6 +6,7 @@
 	--bg-mid: #18181bcb;
 	--bg: #26262c;
 	--accent: #01FAC4;
+	/*--accent: rgb(255,100,0);*/ 
 }
 h1{
 	font-family: "Bitcount Grid Single", system-ui;
@@ -71,7 +72,7 @@ a {
 
 
 .nav a:hover{
-color: #ff8c00; 
+color: var(--accent); 
 text-decoration: underline; 
 
 }
@@ -117,8 +118,8 @@ text-decoration: underline;
 .cartelera div p{
 	font-size: 10px;
 }
-.header_bienvenida{
-	color: rgb(233, 66, 0);
+.header {
+	color: var(--accent);
 }
 .cartelera div img {
 	border-radius: 5px;
